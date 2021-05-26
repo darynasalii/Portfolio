@@ -1,0 +1,146 @@
+$bg-dblue: #164374;
+$bg-blue: #4896e8;
+$bg-blue1: #9dc0e1;
+$bg-lblue: #c4d9ed;
+
+$bg-grey: #ebf2f9;
+$bg-lgrey: #f5f7fa;
+
+$white: #ffffff;
+$black: #000000;
+
+$mobile: 576px; //xs
+$tablet: 768px; //sm
+$laptop: 992px; //md
+$desktop: 1200px; //lg
+$desktoplg: 1400px; //xl
+
+// @font-face {
+//   font-family: Roboto;
+//   src: url(../fonts/Roboto/Roboto-Regular.ttf);
+// }
+// @font-face {
+//   font-family: Roboto-light;
+//   src: url(/fonts/Roboto/Roboto-Light.ttf);
+// }
+
+/* 1rem=10px */
+body,
+html {
+  font-size: 10px;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+h1 {
+  font-family: "Roboto-Light";
+  font-size: 5vw;
+  // line-height: 3rem;
+  margin-bottom: 2.5rem;
+  @media screen and (max-width: $tablet) {
+    font-size: 38px;
+  }
+}
+
+h2 {
+  font-family: "Roboto-Light";
+  font-size: 3vw;
+  line-height: 100%;
+  @media screen and (max-width: $tablet) {
+    font-size: 24px;
+  }
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 1.2em;
+}
+
+#portfolio-header {
+  background-color: $bg-blue;
+}
+
+#about {
+  background-color: $bg-grey;
+
+  p {
+    position: relative;
+    z-index: 2;
+  }
+  #about-mockup {
+    display: flex;
+    float: right;
+
+    flex-grow: 1;
+    width: 30vw;
+
+    height: auto;
+    max-width: 450px;
+    min-width: 200px;
+    @media screen and (max-width: $mobile) {
+      position: relative;
+      right: -50px;
+    }
+  }
+}
+
+#userResearch {
+  #userResearch_backgroung {
+    position: absolute;
+    background-image: url(../img/bgUserResearch.png);
+  }
+}
+
+@media screen and (max-width: $desktoplg) {
+  /*xl*/
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  /*lg*/
+  body {
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  /*md*/
+  body {
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  /*sm*/
+  body {
+    background-color: yellowgreen;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  /*xs*/
+  body {
+    background-color: yellow;
+  }
+}
+
+.container_my-container {
+  border: 3px solid green;
+}
+
+.row_my-row {
+  border: 3px solid red;
+}
+
+.col_my-col {
+  border: 3px dotted blue;
+}
